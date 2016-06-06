@@ -67,6 +67,7 @@ li{
     -moz-background-size: cover;
     background-size: cover;    
 	background-position: center;
+	margin: 0 auto;
 }
 
 
