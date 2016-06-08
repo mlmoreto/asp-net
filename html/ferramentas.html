@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="../assets/img/icons/mo.ico">
 
     <title>A S P - N E T</title>
 
@@ -67,20 +67,23 @@
 						<p>Para a utilização da plataforma ASP-NET são necessárias algumas instalações.
 						Esta página inclui informações detalhadas para ajudá-lo a instalar as ferramentas necessárias para o desenvolvimento de uma aplicação ASP.NET.
 						Também incluímos links para ajudá-lo rapidamente a obter informações de recursos, downloads, e muito mais.</p>
-						<br>				
+						<br>
+						
 						<h2>Visual Studio 2015</h2>
+						<p>Para o desenvolvimento da aplicação ASP.NET, iremos utilizar essa IDE da própria Microsoft:</p>
 						<br>
 						<li><a href="https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx">Clique para Download Visual Studio 2015</a></li>
 						<br>
 						<h2>Padrão Vs. Instalação personalizada:</h2>
 						<br>
-						<p>Quando você instala o Visual Studio 2015, você pode incluir ou excluir componentes que você deseja usar em uma base diária.
-						Isso significa que uma instalação padrão será muitas vezes menor e instalar mais rápido do que uma instalação personalizada. Isso também significa que muitos componentes que foram instalados por padrão em versões anteriores agora são considerados como componentes personalizados que você deve selecionar explicitamente nesta versão.</p>
+						<p>Quando você instala o Visual Studio 2015, você pode incluir ou excluir componentes que você deseja usar utilizar.
+						Isso significa que uma instalação padrão será muitas vezes menor e será instalada muito mais rápido do que uma instalação personalizada. 
+						Isso também significa que muitos componentes que foram instalados por padrão em versões anteriores agora são considerados como componentes personalizados que você deve selecionar explicitamente nesta versão.</p>
 						<br>
 						<img src="../assets/img/1.jpeg">
 						<br>
-						<p>Componentes personalizados incluem o Visual C++, Visual F #, SQL Server Data Tools, ferramentas de plataforma cruzada móveis e SDKs e terceiros SDKs e extensões.
-						Você pode instalar qualquer um dos componentes personalizados em um momento posterior, se você não os selecione durante a instalação inicial.</p>
+						<p>Componentes personalizados incluem o Visual C++, SQL Server Data Tools, outras ferramentas de plataforma, SDKs e extensões.
+						Você pode instalar qualquer um dos componentes personalizados em um momento posterior.</p>
 						<br>
 						<p> Para a instalação do Visual Studio concluir, basta clicar em "Instal", selecione próximo(Next), e, em seguida, siga as instruções restantes. Após o término, basta reiniciar o seu computador.</p>
 						<br>
@@ -162,17 +165,24 @@
 						   otimizada às tecnologias disponíveis na plataforma .NET com performance, segurança e robustez.
 						   Com o EF, os desenvolvedores podem lançar consultas usando LINQ, e depois recuperar e manipular dados como objetos fortemente tipificados.
 						</p>   
-						   
-						
+						   						
 						<h2>As capacidades avançadas do Entity Framework:</h2>
 						<li>Funcionam com uma série de servidores de banco de dados (incluindo o Microsoft SQL Server, Oracle e DB2)</li>
 						<li>Incluem um mecanismo sofisticado de mapeamento que pode lidar com esquemas reais de banco de dados e funciona bem com procedimentos armazenados </li>
 						<li>Fornecem ferramentas integradas do Visual Studio para criar visualmente modelos de entidade e gerar de forma autônoma modelos a partir de um banco de dados existente. Os novos bancos de dados podem ser implantados a partir de um modelo, que também pode ser editado à mão para controle total</li>
 						<li>São bem integrados com todos os modelos de programação de aplicativos, incluindo .NET, Windows Presentation Foundation (WPF), Windows Communication Foundation (WCF) e WCF Data Services (antes chamado de ADO.NET Data Services)</li>
 						<li>O Entity Framework é baseado no modelo de provedor existente do ADO.NET, com provedores existentes sendo atualizados para suportar a nova funcionalidade Entity Framework. Por essa razão, as aplicações existentes baseadas no ADO.NET podem ser usadas facilmente no Entity Framework com um modelo de programação familiar aos desenvolvedores ADO.NET.</li>
-						<img src="../assets/img/ef.png" class="img-responsive">
+						<img src="../assets/img/ef.png" class="img-responsive">	
+
 						<br>
-						<p>Você pode saber mais sobre o Entity Framework através deste <a href="http://bit.ly/mvc-ef">link.</a>
+						<p>Usar o Entity Framework para escrever aplicativos orientados a dados oferece os seguintes benefícios:</p>
+
+						<li>Menor tempo de desenvolvimento: o framework fornece as capacidades básicas de acesso de dados para que os desenvolvedores possam se concentrar na lógica do aplicativo.</li>
+						<li>Os desenvolvedores podem trabalhar com um modelo de objeto mais voltado ao aplicativo, incluindo tipos com herança, membros complexos e relacionamentos.</li>
+						<li>Os aplicativos são liberados de dependências de código fixo em determinado mecanismo de dados ou esquema de armazenamento, já que suportam um modelo conceitual que é independente do modelo físico / de armazenamento.</li>
+						<li>Os mapeamentos entre o modelo do objeto e o esquema de armazenamento específico podem ser alterados sem alteração no código do aplicativo.</li>
+						<li>O suporte a Language-Integrated Query (chamado de LINQ to Entities) fornece validação de sintaxe de tempo de compilação e IntelliSense para a escrita de códigos em relação a um modelo conceitual.</li>
+												
 						<br>
 						<h2>knockout.js</h2>
 						<p>KnockoutJS é uma biblioteca que simplifica a construção de interfaces gráficas dinâmicas, com Javascript, através da utilização de MVVM.</p>
@@ -183,16 +193,58 @@
 						<br>
 						<img src="../assets/img/knockout.png">
 						<br>
+						<br>
+						<h2>Mas, o que é Nuget?</h2>
+						
+						<p>O NuGet é uma extensão do Visual Studio que torna super fácil a instalação e atualização de bibliotecas e ferramentas de terceiros no Visual Studio.
+						   Em termos práticos isso facilita muito na hora de adicionar referências em um projeto e mantê-las atualizadas.</p>
+						
+						<h2>Como buscar e instalar um pacote pelo NuGet?</h2>
+						<p>É super fácil. A partir das versões 2012 do Visual Studio o NuGet já vem instalado como extensão.</p>
 
+						<li>Então basta clicar com o botão direito no seu projeto (ou na pasta References do projeto) e escolher “Manage NuGet Packages…”</li>
+						<li>Em “Installed Packages” você lista todos os pacotes instalados no projeto e pode removê-los.</li>
+						<li>Em “Online” você busca e instala pacotes no seu projeto.</li>
+						<li>Em “Updates” você atualiza os pacotes já instalados.</li>
+
+						<p>Veja algumas telas da instalação de um pacote em um projeto:</p>
+						<br>
+						<img src="../assets/img/nuGet/1.png">
+						<br>
+						<br>
+						<img src="../assets/img/nuGet/2.png">
+						<br>
+						<br>
+						<img src="../assets/img/nuGet/3.png">
+						<br>
+						<p>O NuGet baixa os assemblies necessários na sua Solution (fica dentro da pasta “Packages”), adiciona as referências e faz toda a configuração necessária. 
+						   Inclusive ele baixa dependências para outros pacotes também. O arquivo “packages.config” é um XML que guarda quais pacotes e versões estão instaladas no seu projeto.
+						</p>
 						
 						<h2>Bootstrap</h2>
-						<p>Trata-se de uma biblioteca de CSS (Cascading Style-Sheet) e componentes jQuery que facilita o 
-						trabalho de estruturar ou criar novos layouts para aplicações. Já está integrado no Visual Studio.</p>
+						<p>A equipe do Twitter dedicou várias algumas horas vagas na criação do Bootstrap, uma espécie de framework básico de desenvolvimento que 
+						   lhe fornece uma completa gama de personalização gráfica pronta para a facilitar a criação dos seus websites. Unindo o CSS ao Javascript.</p>
+						<p>Basicamente, trata-se de vários links de CSS com algumas funções de Javascript embarcadas que permite fazer um website completo e bastante atual.
+						   O Bootstrap possui vários plugins de Javascript prontos para o uso que, com um simples CTRL+C e CTRL+V você poderá criar menus com dropdown, alertas, sliders, etc.</p> 
+						<p>O objetivo principal e lógico do Bootstrap é consumir o menor tempo possível no desenvolvimento de um website, seja ele uma página simples estática ou um grande portal dinâmico.
+						   Vários temas podem ser instalados através do NuGet.</p>
 						
+						<p>São criadas as pastas Content, fonts e Scripts, além do arquivo de configuração de pacotes, o packages.config.</p>
+						<li>Content: Nesta pasta estão os arquivos de folha de estilo, os .css.</li>
+						<li>Script: contém os scripts da biblioteca e de outras dependências;</li>
+						<li>fonts: Contém as imagens que servem como ícone.</li>
+						<li>packages.config: Contém as informações sobre os pacotes baixados até o momento.</li>
+						<br>
+						<img src="../assets/img/nuGet/4.jpg">
+						<br>
+						</p>
 						<h2>jQuery</h2>
 						<p>É uma das mais famosas e funcionais bibliotecas baseadas em javascript do mundo. 
-						Facilita o trabalho e manipulação dos objetos DOM (Document Object Model), chamadas Ajax, manipulação de eventos e animações.
-						Já está integrado no Visual Studio junto ao Bootstrap.</p>
+						   Facilita o trabalho e manipulação dos objetos DOM (Document Object Model), chamadas Ajax, manipulação de eventos e animações.
+						   Já está integrado no Visual Studio junto ao Bootstrap.
+						</p>
+						<br>
+						<p>Na próxima <a href="configuracao.html">página</a> veremos como configurar o IIS.</p>
 						
 				</div> <!--col-lg-8 col-lg-offset-2-->
 				
